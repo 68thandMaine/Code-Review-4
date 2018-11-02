@@ -14,17 +14,38 @@
     <h1 class="dispaly-5">The Constructor Pizzaria</h1>
     <hr class="my-4">
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="order-form">
-          <!-- header ---------------------->
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 jumbotron class="card-title">Pizza Order</h5>
-            </div>
+  <form id="form1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="personal-information">Please enter your name below</label>
+            <input type="text" id="first-name" placeholder="Jacob">
+            <input type="text" id="last-name" placeholder="Masterson">
           </div>
-          <form id="form1">
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="address">Please enter your address below</label>
+            <input type="text" id="address" placeholder="e.g. 103 Quaker Meetinghouse Rd">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="phone">Please enter your pone number below</label>
+          <input type="text" id="phone-number" placeholder="e.g. 123-456-7890">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="order-form">
+            <!-- header ---------------------->
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 jumbotron class="card-title">Pizza Order</h5>
+              </div>
+            </div>
             <!-- size ----------------------->
             <div class="card" style="width: 18rem;">
               <div class="card-body">
@@ -85,21 +106,21 @@
             </div>
             <br>
             <button type="submit" class="btn btn-dark" name="button">Click to submit your order!</button>
-          </form>
+  </form>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 jumbotron class="card-title">Order Summary</h5>
+        <div id="order-summary">
+          <p>Total: <span class="total"></span></p>
         </div>
       </div>
-          <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 jumbotron class="card-title">Order Summary</h5>
-                <div id="order-summary">
-                  <p>Total: <span class="total"></span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 </body>
 
 </html>

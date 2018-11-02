@@ -1,6 +1,10 @@
 // Business logic for pizza
-function Pizza(size, toppings) {
-  this.size = size
+function Pizza(firstName, lastName, address, phoneNumber, size, toppings) {
+  this.firstName = firstName,
+  this.lastName = lastName,
+  this.address = address,
+  this.phoneNumber = phoneNumber,
+  this.size = size,
   this.toppings = toppings //(should be determined by a funciton)
 }
 
@@ -40,15 +44,26 @@ function addToppings() {
   }
   return total
 }
+function resetOrder () {
+  $("#first-name").val("")
+  $("#last-name").val("");
+  $("#address").val("");
+  $("#phone-number").val("");
+  $("#pizza-size").val("");
+  $('input[type=checkbox]').prop('checked',false);
+}
 
 $(document).ready(function() {
   $("form#form1").submit(function(event) {
     event.preventDefault();
+    var inputtedFirstName = $("#first-name").val();
+    var inputtedLastName = $("#last-name").val();
+    var inputtedAddress = $("#address").val();
+    var inputtedPhoneNumber = $("#phone-number").val();
     var inputtedSize = $("#pizza-size").val();
     var calculatedToppings = addToppings();
-    var newOrder = new Pizza(inputtedSize, calculatedToppings);
+    var newOrder = new Pizza(inputtedFirstName, inputtedLastName, inputtedAddress, inputtedPhoneNumber, inputtedSize, calculatedToppings);
     $(".total").text(newOrder.costBuilder());
-console.log(calculatedToppings);
-
+    resetOrder();
   })
 })
