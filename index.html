@@ -26,8 +26,14 @@
         </div>
         <div class="col-md-3">
           <div class="form-group">
-            <label for="address">Please enter your address below</label>
-            <input type="text" id="address" placeholder="e.g. 103 Quaker Meetinghouse Rd">
+            <label for="street-address">Please enter your street address below</label>
+            <input type="text" id="street" placeholder="e.g. 103 Quaker Meetinghouse Rd">
+            <label for="city">Please enter your city below</label>
+            <input type="text" id="city" placeholder="e.g. Williamsburg">
+            <label for="state">Please enter your state</label>
+            <input type="text" id="state" placeholder="VA">
+            <label for="zip-code">Please enter your zip-code below</label>
+            <input type="text" id="zip-code" placeholder="23188">
           </div>
         </div>
         <div class="col-md-3">
@@ -106,20 +112,23 @@
             </div>
             <br>
             <button type="submit" class="btn btn-dark" name="button">Click to submit your order!</button>
-  </form>
-  </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 jumbotron class="card-title">Order Summary</h5>
-        <div id="order-summary">
-          <p>Total: <span class="total"></span></p>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 jumbotron class="card-title">Order Summary</h5>
+            <div id="order-summary">
+              <p> Customer: <span id="customer-name"></span></p>
+              <p>Address: <span id="customer-address"></span></p>
+              <p>Phone Number: <span id="customer-phone-number"></span></p>
+              <p>Total: <span id="total"></span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
   </div>
 </body>
 
