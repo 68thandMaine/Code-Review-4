@@ -12,7 +12,7 @@ Pizza.prototype.costBuilder = function() {
     size = 10;
   } else if (this.size === "med") {
     size = 13;
-  } else (this.size === "lg") {
+  } else if (this.size === "lg") {
     size = 14
   }
   var toppingCost = this.toppings
