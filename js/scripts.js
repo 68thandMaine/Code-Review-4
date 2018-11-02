@@ -10,9 +10,9 @@ Pizza.prototype.costBuilder = function() {
   var size;
   if (this.size === "sml") {
     size = 10;
-  } else if (this.size === "md") {
+  } else if (this.size === "med") {
     size = 13;
-  } else if (this.size === "lg") {
+  } else (this.size === "lg") {
     size = 14
   }
   var toppingCost = this.toppings
@@ -23,10 +23,10 @@ Pizza.prototype.costBuilder = function() {
 
 
 
-//////////////////
+ /////////////////
 //              //
-//   UI logic  //
-//             //
+//   UI logic   //
+//              //
 /////////////////
 
 
