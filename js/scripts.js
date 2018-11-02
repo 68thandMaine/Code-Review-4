@@ -1,7 +1,7 @@
 // Business logic for pizza
 function Pizza(size, toppings) {
   this.size = size
-  this.toppings = 0 //(should be determined by a funciton)
+  this.toppings = toppings //(should be determined by a funciton)
 }
 
 
