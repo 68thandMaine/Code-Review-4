@@ -6,11 +6,98 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Address Book</title>
+  <title>Pizza Order Form</title>
 </head>
 
 <body>
-
+  <div class="jumbotron">
+    <h1 class="dispaly-5">The Constructor Pizzaria</h1>
+    <hr class="my-4">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="order-form">
+          <!-- header ---------------------->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 jumbotron class="card-title">Pizza Order</h5>
+            </div>
+          </div>
+          <form id="form1">
+            <!-- size ----------------------->
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <label for="size">Please Choose a Size</label>
+                <select class="form-control" id="pizza-size">
+                  <option value="sml">Small</option>
+                  <option value="med">Medium</option>
+                  <option value="lg">Large</option>
+                </select>
+              </div>
+            </div>
+            <!-- Meat ----------------------->
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <label for="meat-toppings">Please select the Meats You Want</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="meat-toppings" value="1.50">
+                  <label class="form-check-label" for"pepperoni">Pepperoni</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="meat-toppings" value="1.50">
+                  <label class="form-check-label" for"sausage">Sausage</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="meat-toppings" value="3.00">
+                  <label class="form-check-label" for"Bacon">Bacon</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="meat-toppings" value="3.00">
+                  <label class="form-check-label" for"Brisket">Brisket</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="meat-toppings" value="0.00">
+                  <label class="form-check-label" for"Cheese">No meat - just cheese</label>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <label for="toppings">Choose your Toppings</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="veggie-toppings" value=".50">
+                  <label class="form-check-label" for"bell-pepper">Bell Pepper</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="veggie-toppings" value=".50">
+                  <label class="form-check-label" for"artichoke">Artichoke</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="veggie-toppings" value=".75">
+                  <label class="form-check-label" for"basil">Basil</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="veggie-toppings" value=".75">
+                  <label class="form-check-label" for"anchovy">Anchovy</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark" name="button">Click to submit your order!</button>
+          </form>
+        </div>
+      </div>
+          <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 jumbotron class="card-title">Order Summary</h5>
+                <div id="order-summary"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
+// Business logic for pizza
 function Pizza(size, meat, toppings) {
   this.size = size //(sml, med, lg) shold be the values the ui collects
-  this.meat = 0 //(should be determined by a funciton)
-  this.toppings = 0//(should be determined by a funciton)
+  this.meat = meat //(should be determined by a funciton)
+  this.toppings = toppings//(should be determined by a funciton)
 }
-
 
 Pizza.prototype.costBuilder = function() {
   var size;
@@ -16,4 +16,10 @@ Pizza.prototype.costBuilder = function() {
   }
 var total = this.meat + this.toppings + size
 this.pizzaCost = total
+}
+
+
+function toppingCost () {
+  var input = document.getElementsByName
+
 }
